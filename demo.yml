@@ -1,20 +1,17 @@
 ---
 - hosts: servers
   handlers:
-
   - name: Handler_No1
     debug:
       msg: "Message from Handler Number 1"
-
   tasks:
-
-
   - name: Add User dannyg
     user:
       name: dannyg
       comment: "DannyG"
       shell: /bin/bash
     notify: Handler_No1
+
 
   - name: Register statement
     shell: ls -l 
