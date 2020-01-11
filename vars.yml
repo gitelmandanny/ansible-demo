@@ -2,8 +2,8 @@
 - hosts: servers
 
   vars:
-  - var1: "Aviel"
-  - var2: "Buskila"
+  - var1: "Danny"
+  - var2: "Gitelman"
   - listVar:
     - "Item4"
     - "Item3"

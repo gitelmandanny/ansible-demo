@@ -2,5 +2,5 @@
 - name: install nginx and vim
   apt: name=nginx,vim state=present
 
-- name: Copy aviel.txt 
-  copy: src=aviel.txt dest=/var/tmp
+- name: Copy dannyg.txt 
+  copy: src=dannyg.txt dest=/var/tmp

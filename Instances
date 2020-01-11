@@ -1,5 +1,5 @@
 ----------------------------
-- Ansible Port is 32768 
-- Node 1 Port is 32769
-- Node 2 Port is 32770
+- Ansible Port is 32774 
+- Node 1 Port is 32775
+- Node 2 Port is 32776
 ----------------------------

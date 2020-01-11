@@ -5,5 +5,5 @@
 
   - name: Template a file to another place
     template:
-        src: aviel_hostname.j2
+        src: dannyg_hostname.j2
         dest: /root/hostname.conf
