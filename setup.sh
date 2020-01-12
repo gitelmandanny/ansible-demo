@@ -1,6 +1,7 @@
 #!/bin/bash
+docker rm server node1 node2 || true
 docker build -t eg_sshd .
-docker network create -d bridge ansible
+docker network create -d bridge ansible || true
 docker run -d -P --name server --network ansible eg_sshd
 docker run -d -P --name node1 --network ansible eg_sshd
 docker run -d -P --name node2 --network ansible eg_sshd
