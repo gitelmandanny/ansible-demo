@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Sven Dowideit <SvenDowideit@docker.com>
 
-RUN apt-get update && apt-get install -y openssh-server python ansible vim sshpass
+RUN apt-get update && apt-get install -y openssh-server python ansible vim sshpass curl
 RUN mkdir /var/run/sshd
 RUN echo 'root:123123' | chpasswd
 RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
