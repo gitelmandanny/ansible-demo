@@ -1,4 +1,4 @@
-# Ad-Hoc Commands
+# Ad-Hoc Commands2
 ansible servers -m ping
 ansible servers -a "echo Hello World!"
 ansible servers -m apt -a "name=nginx state=present"
